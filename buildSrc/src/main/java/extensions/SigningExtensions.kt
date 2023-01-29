@@ -1,3 +1,8 @@
+/**
+ * @author Kaan Fırat
+ * @version 1.0, 29/01/23
+ */
+
 package extensions
 
 import com.android.build.gradle.BaseExtension

@@ -1,3 +1,8 @@
+/**
+ * @author Kaan Fırat
+ * @version 1.0, 29/01/23
+ */
+
 object Versions {
     const val Compose = "1.1.1"
     const val CoreKtx = "1.7.0"

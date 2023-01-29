@@ -1,3 +1,8 @@
+/**
+ * @author Kaan Fırat
+ * @version 1.0, 29/01/23
+ */
+
 package extensions
 
 import org.gradle.api.artifacts.Dependency
@@ -191,43 +196,27 @@ fun DependencyHandler.addTestDependencies() {
 
 fun DependencyHandler.addModuleDependencies() {
     // Modules
-    implementation(project(mapOf("path" to ":data:model")))
+    //implementation(project(mapOf("path" to ":data:model")))
     implementation(project(mapOf("path" to ":data:local")))
-    implementation(project(mapOf("path" to ":data:remote")))
-    implementation(project(mapOf("path" to ":data:repository")))
-    implementation(project(mapOf("path" to ":domain")))
+    //implementation(project(mapOf("path" to ":data:remote")))
+    //implementation(project(mapOf("path" to ":data:repository")))
+    //implementation(project(mapOf("path" to ":domain")))
 
-    implementation(project(mapOf("path" to ":common:provider")))
-    implementation(project(mapOf("path" to ":common:theme")))
-    implementation(project(mapOf("path" to ":common:component")))
+    implementation(project(mapOf("path" to ":provider")))
+    implementation(project(mapOf("path" to ":theme")))
+    //implementation(project(mapOf("path" to ":common:component")))
 
-    implementation(project(mapOf("path" to ":libraries:framework")))
-    implementation(project(mapOf("path" to ":libraries:jetframework")))
+    implementation(project(mapOf("path" to ":framework")))
+    //implementation(project(mapOf("path" to ":libraries:jetframework")))
 
-    implementation(project(mapOf("path" to ":features:welcome")))
-    implementation(project(mapOf("path" to ":features:locations")))
-    implementation(project(mapOf("path" to ":features:episodes")))
-    implementation(project(mapOf("path" to ":features:settings")))
-    implementation(project(mapOf("path" to ":features:characters")))
-    implementation(project(mapOf("path" to ":features:splash")))
-    implementation(project(mapOf("path" to ":features:home")))
+    //implementation(project(mapOf("path" to ":features:welcome")))
+    //implementation(project(mapOf("path" to ":features:splash")))
+    //implementation(project(mapOf("path" to ":features:home")))
 }
 
 // Modules
 val DependencyHandler.FEATURE_WELCOME
     get() = implementation(project(mapOf("path" to ":features:welcome")))
-
-val DependencyHandler.FEATURE_LOCATIONS
-    get() = implementation(project(mapOf("path" to ":features:locations")))
-
-val DependencyHandler.FEATURE_EPISODES
-    get() = implementation(project(mapOf("path" to ":features:episodes")))
-
-val DependencyHandler.FEATURE_SETTINGS
-    get() = implementation(project(mapOf("path" to ":features:settings")))
-
-val DependencyHandler.FEATURE_CHARACTERS
-    get() = implementation(project(mapOf("path" to ":features:characters")))
 
 val DependencyHandler.FEATURE_HOME
     get() = implementation(project(mapOf("path" to ":features:home")))
@@ -264,10 +253,10 @@ val DependencyHandler.COMPONENT
     get() = implementation(project(mapOf("path" to ":common:component")))
 
 val DependencyHandler.FRAMEWORK
-    get() = implementation(project(mapOf("path" to ":libraries:framework")))
+    get() = implementation(project(mapOf("path" to ":framework")))
 
 val DependencyHandler.JETFRAMEWORK
     get() = implementation(project(mapOf("path" to ":libraries:jetframework")))
 
 val DependencyHandler.TEST
-    get() = testImplementation(project(mapOf("path" to ":libraries:testutils")))
+    get() = ""

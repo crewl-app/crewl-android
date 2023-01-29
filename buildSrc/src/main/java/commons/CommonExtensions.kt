@@ -1,3 +1,8 @@
+/**
+ * @author Kaan Fırat
+ * @version 1.0, 29/01/23
+ */
+
 package commons
 
 import com.android.build.api.dsl.CommonExtension
