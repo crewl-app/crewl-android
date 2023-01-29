@@ -1,3 +1,8 @@
+/**
+ * @author Kaan Fırat
+ * @version 1.0, 29/01/23
+ */
+
 package codequality
 
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask

@@ -6,6 +6,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.parcelize")
     id("com.google.devtools.ksp")
     id("org.jetbrains.kotlin.kapt")
+    id("dagger.hilt.android.plugin")
     id("codeanalyzetools.quality")
     id("codeanalyzetools.jacoco-report")
 }
@@ -75,6 +76,7 @@ android.applicationVariants.all {
 
 dependencies {
     /* Todo: Add module dependencies. */
+    addModuleDependencies()
 
     /* Common */
     addCommonDependencies()
