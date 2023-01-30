@@ -4,4 +4,8 @@
     <style name="Theme.CrewlCompose" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
+
+    <style name="SplashScreenTheme" parent="Theme.CrewlCompose">
+        <item name="android:windowBackground">@drawable/bg_splash_screen</item>
+    </style>
 </resources>

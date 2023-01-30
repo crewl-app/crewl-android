@@ -210,7 +210,7 @@ fun DependencyHandler.addModuleDependencies() {
     //implementation(project(mapOf("path" to ":libraries:jetframework")))
 
     //implementation(project(mapOf("path" to ":features:welcome")))
-    //implementation(project(mapOf("path" to ":features:splash")))
+    implementation(project(mapOf("path" to ":feature:splash")))
     //implementation(project(mapOf("path" to ":features:home")))
 }
 
