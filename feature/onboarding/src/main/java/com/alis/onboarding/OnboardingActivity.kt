@@ -37,7 +37,6 @@ private fun OnboardingRoot() {
             modifier = Modifier.fillMaxSize(),
             color = CrewlColors.background
         ) {
-
         }
     }
 }
