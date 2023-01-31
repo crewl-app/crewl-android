@@ -21,6 +21,12 @@ dependencyResolutionManagement {
 rootProject.name = "CrewlCompose"
 include(":app")
 include(":data:local")
+include(":data:repository")
 include(":framework")
 include(":provider")
 include(":theme")
+include(":feature:splash")
+include(":domain")
+include(":feature:onboarding")
+include(":system")
+include(":ui:component")

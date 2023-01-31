@@ -75,7 +75,6 @@ android.applicationVariants.all {
 }
 
 dependencies {
-    /* Todo: Add module dependencies. */
     addModuleDependencies()
 
     /* Common */
