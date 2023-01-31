@@ -195,37 +195,36 @@ fun DependencyHandler.addTestDependencies() {
 }
 
 fun DependencyHandler.addModuleDependencies() {
-    // Modules
     //implementation(project(mapOf("path" to ":data:model")))
     implementation(project(mapOf("path" to ":data:local")))
     //implementation(project(mapOf("path" to ":data:remote")))
-    //implementation(project(mapOf("path" to ":data:repository")))
-    //implementation(project(mapOf("path" to ":domain")))
+    implementation(project(mapOf("path" to ":data:repository")))
+    implementation(project(mapOf("path" to ":domain")))
 
     implementation(project(mapOf("path" to ":provider")))
     implementation(project(mapOf("path" to ":theme")))
-    //implementation(project(mapOf("path" to ":common:component")))
+    implementation(project(mapOf("path" to ":ui:component")))
 
     implementation(project(mapOf("path" to ":framework")))
-    //implementation(project(mapOf("path" to ":libraries:jetframework")))
+    implementation(project(mapOf("path" to ":system")))
 
-    //implementation(project(mapOf("path" to ":features:welcome")))
+    implementation(project(mapOf("path" to ":feature:onboarding")))
     implementation(project(mapOf("path" to ":feature:splash")))
     //implementation(project(mapOf("path" to ":features:home")))
 }
 
 // Modules
-val DependencyHandler.FEATURE_WELCOME
-    get() = implementation(project(mapOf("path" to ":features:welcome")))
+val DependencyHandler.FEATURE_ONBOARDING
+    get() = implementation(project(mapOf("path" to ":feature:onboarding")))
 
 val DependencyHandler.FEATURE_HOME
-    get() = implementation(project(mapOf("path" to ":features:home")))
+    get() = implementation(project(mapOf("path" to ":feature:home")))
 
 val DependencyHandler.FEATURE_MAIN
-    get() = implementation(project(mapOf("path" to ":features:main")))
+    get() = implementation(project(mapOf("path" to ":feature:main")))
 
 val DependencyHandler.FEATURE_SPLASH
-    get() = implementation(project(mapOf("path" to ":features:splash")))
+    get() = implementation(project(mapOf("path" to ":feature:splash")))
 
 
 val DependencyHandler.MODEL
@@ -244,19 +243,19 @@ val DependencyHandler.DOMAIN
     get() = implementation(project(mapOf("path" to ":domain")))
 
 val DependencyHandler.PROVIDER
-    get() = implementation(project(mapOf("path" to ":common:provider")))
+    get() = implementation(project(mapOf("path" to ":provider")))
 
 val DependencyHandler.THEME
-    get() = implementation(project(mapOf("path" to ":common:theme")))
+    get() = implementation(project(mapOf("path" to ":theme")))
 
 val DependencyHandler.COMPONENT
-    get() = implementation(project(mapOf("path" to ":common:component")))
+    get() = implementation(project(mapOf("path" to ":ui:component")))
 
 val DependencyHandler.FRAMEWORK
     get() = implementation(project(mapOf("path" to ":framework")))
 
-val DependencyHandler.JETFRAMEWORK
-    get() = implementation(project(mapOf("path" to ":libraries:jetframework")))
+val DependencyHandler.SYSTEM
+    get() = implementation(project(mapOf("path" to ":system")))
 
 val DependencyHandler.TEST
     get() = ""

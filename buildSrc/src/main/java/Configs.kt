@@ -3,6 +3,7 @@
  * @version 1.0, 29/01/23
  */
 
+/* Todo: Decrease SDK Version */
 object Configs {
     private const val versionMajor = 1
     private const val versionMinor = 0

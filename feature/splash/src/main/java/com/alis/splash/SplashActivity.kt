@@ -7,9 +7,11 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.lifecycleScope
 import com.alis.framework.extension.launchActivity
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 
+@AndroidEntryPoint
 class SplashActivity : FragmentActivity() {
     private val viewModel by viewModels<SplashViewModel>()
 
@@ -24,6 +26,8 @@ class SplashActivity : FragmentActivity() {
         lifecycleScope.launchWhenCreated {
             viewModel.startOnboarding.collectLatest {
                 delay(3000)
+                if (it)
+                    navigate(packageName = packageName, className = "com.alis.onboarding.OnboardingActivity")
             }
         }
     }

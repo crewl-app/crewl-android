@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="theme/src/main/res/drawable/bg_splash_screen.xml" value="0.2215" />
+        <entry key="theme/src/main/res/drawable/ic_launcher_background.xml" value="0.2215" />
+        <entry key="theme/src/main/res/drawable/ic_logo_minify.xml" value="0.2215" />
         <entry key="theme/src/main/res/font/space_grotesk_semibold.xml" value="0.4101851851851852" />
       </map>
     </option>
